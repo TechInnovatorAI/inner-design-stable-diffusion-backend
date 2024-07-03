@@ -10,7 +10,7 @@ import { RefreshTokenStrategy } from './strategies/refreshToken.strategy';
 import { MailModule } from 'src/util/mail/mail.module';
 import { JwtService } from '@nestjs/jwt';
 
-export const jwtSecret = 'zjP9h6ZI5LoSKCRj';
+export const jwtSecret = process.env.JWTSECRET;
 
 @Module({
   imports: [
